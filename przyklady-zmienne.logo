@@ -1,0 +1,22 @@
+{przykłady użycia zmiennych}
+block petelka [
+var i 1
+for 40 [ fw 10 rt i + i 1 i ]
+var i 100
+]
+
+block spirala [
+var i 1
+for 40 [ fw i rt 30 + i 1 i ]
+]
+
+{rekursywne wywołanie siebie 200 razy}
+var e 200
+block rekur [
+- e 1 e
+var f e
+for f [ var f 1
+fw f
+rekur
+{w ten sposob mozna symulowac ifa: } 
+var f 0] ]

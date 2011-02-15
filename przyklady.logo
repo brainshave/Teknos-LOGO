@@ -1,0 +1,22 @@
+{trójkąt Sierpińskiego, bardzo naiwna implementacja}
+block sierp [
+up bk 115 lt 90 bk 200 down
+for 3 [ fw 400 rt 120
+for 3 [ fw 200 rt 120
+for 3 [ fw 100 rt 120
+for 3 [ fw 50 rt 120
+for 3 [ fw 25 rt 120
+for 3 [ fw 12 rt 120
+for 3 [ fw 6 rt 120 {wait 5} {<- odkomentuj żeby było animowane}]
+] ] ] ] ] ]
+up fw 200 rt 90 fw 115 down ]
+
+{ przykład animacji }
+block rose [
+for 9 [
+for 36 [ for 3 fw 5 rt 10 wait 5 ]
+up rt 130 fw 10 lt 90 down ] ]
+
+block sierpRose [
+for 8 [ sierp rt 15 wait 20] ]
+reset sierprose

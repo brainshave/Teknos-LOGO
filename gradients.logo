@@ -1,0 +1,47 @@
+block grad1 [
+var c 255
+for 255 [
+- 256 c b
+% c b e
+color c b e
+fw 1
+rt 1
+- c 1 c
+]]
+
+block grad2 [
+up bk 128 down
+var c 255
+rot 90 
+for 255 [
+- 256 c b
+/ c b e
+color c b e
+fw 30
+rot 0
+fw 1
+rot 90 bk 30
+- c 1 c
+wait 1 ] ]
+
+block grad3 [
+up bk 128 
+rot 90
+bk 128
+down
+var c 255
+for 255 [
+- 256 c b
+var e 255
+for 255 [
+- e 1 e
+color c b e
+fw 1
+]
+rot 0
+fw 1
+rot 90 bk 255
+- c 1 c
+wait 1 ] ]
+
+reset grad3

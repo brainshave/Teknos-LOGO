@@ -1,0 +1,22 @@
+block kolo [ for r [ fw 3 rt 2 ] ]
+
+block animacja [
+var offset 200
+var pr 0
+for 40 [
+reset
+up bk 70 down
+lt 90
+bk 300 fw 600 bk 300
+fw offset
+var r 360
+kolo
+var r pr
+kolo
+- offset 10 offset
++ pr 6 pr
+wait 50
+]
+]
+
+reset animacja
