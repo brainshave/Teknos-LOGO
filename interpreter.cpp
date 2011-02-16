@@ -140,8 +140,9 @@ Block * Interpreter::read(QString codeIn) {
 Action * Interpreter::getAction(const QString & token, QStringListIterator & it, Eval * parentBlock) {
     Action * tmp = 0;
     if (token == "var") {
-        tmp = new Action(parentBlock, it.hasNext() ? it.next() : "",
-                         it.hasNext() ? it.next() : "");
+        QString opA = it.hasNext() ? it.next() : "";
+        QString opB = it.hasNext() ? it.next() : "";
+        tmp = new Action(parentBlock, opA, opB);
     } else if (token == "fw") {
         tmp = new Action(parentBlock, Action::Go,
                          (it.hasNext() ? it.next() : ""));

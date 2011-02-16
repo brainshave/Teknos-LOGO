@@ -5,6 +5,7 @@
 #include <QBrush>
 #include <QDebug>
 
+#define _USE_MATH_DEFINES
 #include <math.h>
 
 Turtle::Turtle(QWidget *parent, QPixmap *npix)
