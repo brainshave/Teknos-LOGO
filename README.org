@@ -63,12 +63,12 @@
 
   There's only one flow control construct: *FOR count command*, where
   command is one command or a block. Command (or block) will be
-  invoked _count_ times.
+  invoked /count/ times.
 
 * Animation (best part)
 
   You can use command *WAIT ms* to pause drawing for a moment. Look in
-  the [[Examples/animation.logo]] and [[Examples/gradients.logo]] for
+  the [[https://github.com/santamon/Teknos-LOGO/blob/master/Examples/animation.logo][Examples/animation.logo]] and [[https://github.com/santamon/Teknos-LOGO/blob/master/Examples/gradients.logo][Examples/gradients.logo]] files for
   animation examples.
   
 
