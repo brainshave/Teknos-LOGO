@@ -18,7 +18,7 @@
   fine on these OS's nowadays too. Today I managed to compile it with
   MS VS2010 C++ compiler "Release" mode on Windows 7.
 
-  Just /qmake && make/ should do the trick.
+  Just ~qmake && make~ should do the trick.
 
 * Usage
 
@@ -47,7 +47,7 @@
 
 * Variables & Arithmetic
 
-  VAR name value -- set new variable in local scope with name
+  ~VAR name value~ :: set new variable in local scope with name
   (case-insensitive) and value value (can be another variable).
 
   Arithmetic operators are functions with 3 arguments.
@@ -63,18 +63,18 @@
 
 * Flow Control
 
-  *Blocks* begin with [ and end with ] and can hold any amount of
-  commands. You can name a block with *BLOCK name [ content ]* to
+  *Blocks* begin with ~[~ and end with ~]~ and can hold any amount of
+  commands. You can name a block with ~BLOCK name [ content ]~ to
   store it as procedure. No argument at this moment (and forever) so
   you have to use variables for this.
 
-  There's only one flow control construct: *FOR count command*, where
+  There's only one flow control construct: ~FOR count command~, where
   command is one command or a block. Command (or block) will be
   invoked /count/ times.
 
 * Animation (The Best Part)
 
-  You can use command *WAIT ms* to pause drawing for a moment. Look in
+  You can use command ~WAIT ms~ to pause drawing for a moment. Look in
   the [[https://github.com/santamon/Teknos-LOGO/blob/master/Examples/animation.logo][Examples/animation.logo]] and [[https://github.com/santamon/Teknos-LOGO/blob/master/Examples/gradients.logo][Examples/gradients.logo]] files for
   animation examples.
   
