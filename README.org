@@ -18,7 +18,7 @@
   fine on these OS's nowadays too. Today I managed to compile it with
   MS VS2010 C++ compiler "Release" mode on Windows 7.
 
-  Just "qmake && make" should do the trick.
+  Just /qmake && make/ should do the trick.
 
 * Usage
 
@@ -50,8 +50,17 @@
   VAR name value -- set new variable in local scope with name
   (case-insensitive) and value value (can be another variable).
 
-  Arithmetic operators are functions with 3 arguments, *+ a b c* is *c
-  = a + b*.  Available operators: +, -, *, /, % (module), MIN, MAX,
+  Arithmetic operators are functions with 3 arguments.
+
+#+BEGIN_SRC 
+  + a b c 
+#+END_SRC
+  is
+#+BEGIN_SRC
+  c = a + b
+#+END_SRC
+
+  Available operators: +, -, *, /, % (module), MIN, MAX,
   POW (A**B), ROOT (A**(1/B))
 
 * Flow Control
