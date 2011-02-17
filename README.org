@@ -43,7 +43,7 @@
   - UP -- make turtle fly so it won't leave trace,
   - DOWN -- put turtle back on the ground,
   - COLOR r g b -- set color to r g b values. Check out
-    [[Examples/gradients.logo]] file for shiny examples :).
+    [[https://github.com/santamon/Teknos-LOGO/blob/master/Examples/gradients.logo][Examples/gradients.logo]] file for shiny examples :).
 
 * Variables & Arithmetic
 
@@ -52,18 +52,18 @@
 
   Arithmetic operators are functions with 3 arguments.
 
-#+BEGIN_SRC haskell
+#+BEGIN_SRC
   + a b c 
 #+END_SRC
 
   is equivalent of:
 
-#+BEGIN_SRC C
+#+BEGIN_SRC
   c = a + b
 #+END_SRC
 
   Available operators: +, -, *, /, % (module), MIN, MAX,
-  POW (A**B), ROOT (A**(1/B))
+  POW (A^{B}), ROOT (A^{1/B})
 
 * Flow Control
 
