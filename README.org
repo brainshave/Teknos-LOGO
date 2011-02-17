@@ -53,7 +53,7 @@
   Arithmetic operators are functions with 3 arguments.
 
 #+BEGIN_SRC 
-  + a b c 
+  \+ a b c 
 #+END_SRC
 
   is
