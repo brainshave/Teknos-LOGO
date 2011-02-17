@@ -54,7 +54,7 @@
 
   ~+ a b c~
 
-  is equivalent of:
+  is an equivalent of:
 
   ~c = a + b~
 
@@ -65,7 +65,7 @@
 
   *Blocks* begin with ~[~ and end with ~]~ and can hold any amount of
   commands. You can name a block with ~BLOCK name [ content ]~ to
-  store it as procedure. No argument at this moment (and forever) so
+  store it as a procedure. No argument at this moment (and forever) so
   you have to use variables for this.
 
   There's only one flow control construct: ~FOR count command~, where
@@ -79,5 +79,4 @@
   animation examples.
   
 
-copywrong 2009 by Szymon Witamborski :)
-
+copywrong 2009-2011 by Szymon Witamborski :)
