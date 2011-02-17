@@ -63,7 +63,7 @@
 #+END_SRC
 
   Available operators: +, -, *, /, % (module), MIN, MAX,
-  POW (A^{B}), ROOT (A^{1/B})
+  POW ( A^{B} ), ROOT ( A^{1/B} )
 
 * Flow Control
 
