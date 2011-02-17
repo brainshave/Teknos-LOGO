@@ -33,16 +33,16 @@
   
   All names are case-insensitive.
   
-  - RESET -- reset turtle on center and clear image,
-  - FW x -- go forward x pixels,
-  - BK x -- bo backward x pixels,
-  - LT x -- rotate left (counter-clockwise) x degrees,
-  - RT x -- rotate right (clockwise) x degrees,
-  - ROT x -- rotate to a certain degree from vertical position,
+  - RESET :: reset turtle on center and clear image,
+  - FW x :: go forward x pixels,
+  - BK x :: bo backward x pixels,
+  - LT x :: rotate left (counter-clockwise) x degrees,
+  - RT x :: rotate right (clockwise) x degrees,
+  - ROT x :: rotate to a certain degree from vertical position,
     disrespecting actual position,
-  - UP -- make turtle fly so it won't leave trace,
-  - DOWN -- put turtle back on the ground,
-  - COLOR r g b -- set color to r g b values. Check out
+  - UP :: make turtle fly so it won't leave trace,
+  - DOWN :: put turtle back on the ground,
+  - COLOR r g b :: set color to r g b values. Check out
     [[https://github.com/santamon/Teknos-LOGO/blob/master/Examples/gradients.logo][Examples/gradients.logo]] file for shiny examples :).
 
 * Variables & Arithmetic
@@ -51,19 +51,15 @@
   (case-insensitive) and value value (can be another variable).
 
   Arithmetic operators are functions with 3 arguments.
-@
-#+BEGIN_SRC
-+ a b c 
-#+END_SRC
-@
+
+  ~+ a b c~
+
   is equivalent of:
 
-#+BEGIN_SRC
-c = a + b
-#+END_SRC
+  ~c = a + b~
 
-  Available operators: +, -, *, /, % (module), MIN, MAX,
-  POW (A^{B}), ROOT (A^{1/B})
+  Available operators: ~+~, ~-~, ~*~, ~/~, ~%~ (module), ~MIN~, ~MAX~, ~POW~ (A^{B}),
+  ~ROOT~ (A^{1/B})
 
 * Flow Control
 
