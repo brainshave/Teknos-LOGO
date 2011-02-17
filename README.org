@@ -51,11 +51,11 @@
   (case-insensitive) and value value (can be another variable).
 
   Arithmetic operators are functions with 3 arguments.
-
+@
 #+BEGIN_SRC
 + a b c 
 #+END_SRC
-
+@
   is equivalent of:
 
 #+BEGIN_SRC
