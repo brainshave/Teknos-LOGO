@@ -1,0 +1,76 @@
+* Teknos
+
+  This is my project for first C++ course. It's a LOGO interperter!
+  Task was to write a simple logo implementation with FW (forward) and
+  RT (rotation) functions (I can't remember now what else). This
+  program can do many more! In fact, it turned to became full-fledged
+  (LOL) programming language.
+
+  The name is Teknos, which means "turtle" in Hungarian. I planned to
+  name all variables in Hungarian but It became boring at some
+  moment :P.
+
+* Compilation
+
+  Back in 2009 (prehistoric times) program compiled on OpenSolaris,
+  Linux and Windows Vista (no 7 at that time, sorry Winnetou) with GCC
+  toolchain (some version) + Qt 4.4, so probably it should compile
+  fine on these OS's nowadays too. Today I managed to compile it with
+  MS VS2010 C++ compiler "Release" mode on Windows 7.
+
+  Just "qmake && make" should do the trick.
+
+* Usage
+
+  Type your code in "Buffer" tab and push Ctrl+Enter to execute
+  it. Every time whole buffer will be executed, so probably you'd like
+  to keep "reset" as a first command.
+
+  There's no separators between commands. Each one "eats" as much
+  arguments as it wants to.
+
+* Basic Functions
+  
+  All names are case-insensitive.
+  
+  - RESET -- reset turtle on center and clear image,
+  - FW x -- go forward x pixels,
+  - BK x -- bo backward x pixels,
+  - LT x -- rotate left (counter-clockwise) x degrees,
+  - RT x -- rotate right (clockwise) x degrees,
+  - ROT x -- rotate to a certain degree from vertical position,
+    disrespecting actual position,
+  - UP -- make turtle fly so it won't leave trace,
+  - DOWN -- put turtle back on the ground,
+  - COLOR r g b -- set color to r g b values. Check out
+    [[Examples/gradients.logo]] file for shiny examples :).
+
+* Variables & Arithmetic
+
+  VAR name value -- set new variable in local scope with name
+  (case-insensitive) and value value (can be another variable).
+
+  Arithmetic operators are functions with 3 arguments, *+ a b c* is *c
+  = a + b*.  Available operators: +, -, *, /, % (module), MIN, MAX,
+  POW (A**B), ROOT (A**(1/B))
+
+* Flow Control
+
+  *Blocks* begin with [ and end with ] and can hold any amount of
+  commands. You can name a block with *BLOCK name [ content ]* to
+  store it as procedure. No argument at this moment (and forever) so
+  you have to use variables for this.
+
+  There's only one flow control construct: *FOR count command*, where
+  command is one command or a block. Command (or block) will be
+  invoked _count_ times.
+
+* Animation (best part)
+
+  You can use command *WAIT ms* to pause drawing for a moment. Look in
+  the [[Examples/animation.logo]] and [[Examples/gradients.logo]] for
+  animation examples.
+  
+
+copywrong 2009 by Szymon Witamborski :)
+
